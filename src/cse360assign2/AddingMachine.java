@@ -14,7 +14,7 @@ public class AddingMachine {
         private String logStr;
 	
     /**
-     * Constructor for AddingMachine. Sets total to 0. Nothing else.
+     * Constructor for AddingMachine. Sets total and logstr to 0.
      */
     public AddingMachine () {
 		total = 0;  // not needed - included for clarity
