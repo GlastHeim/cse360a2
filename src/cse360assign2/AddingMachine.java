@@ -4,19 +4,21 @@ package cse360assign2;
  *
  * @author debra calliss
  * @editor kyle benda
- * @asuid 120750???
+ * @asuid 1207502981
  * @description This is the adding machine class, meant to give us (the students of cse360)
  * practice with version control.
  */
 public class AddingMachine {
 
 	private int total;
+        private String logStr;
 	
     /**
      * Constructor for AddingMachine. Sets total to 0. Nothing else.
      */
     public AddingMachine () {
 		total = 0;  // not needed - included for clarity
+                logStr = "0"; //needed - not included for clarity
 	}
 	
     /**
@@ -24,7 +26,7 @@ public class AddingMachine {
      * @return returns the current total
      */
     public int getTotal () {
-		return 0;
+		return total;
 	}
 	
     /**
@@ -32,7 +34,8 @@ public class AddingMachine {
      * @param value value to add to total
      */
     public void add (int value) {
-		
+		total += value;
+                logStr += "+"+Integer.toString(value);
 	}
 	
     /**
@@ -40,7 +43,8 @@ public class AddingMachine {
      * @param value value to subtract from total
      */
     public void subtract (int value) {
-		
+		total -= value;
+                logStr += "-"+Integer.toString(value);
 	}
 		
     /**
@@ -49,7 +53,7 @@ public class AddingMachine {
      * ie "add 2, subtract 1" would return 0+2-1 (as total was 0 to start with).
      */
     public String toString () {
-		return "";
+		return logStr;
 	}
 
     /**
