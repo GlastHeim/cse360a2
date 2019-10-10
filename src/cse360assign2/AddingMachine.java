@@ -4,6 +4,7 @@ package cse360assign2;
  *
  * @author debra calliss
  * @editor kyle benda
+ * @assignment# 2
  * @asuid 1207502981
  * @classid 85141
  * @description This is the adding machine class, meant to give us (the students of cse360)
